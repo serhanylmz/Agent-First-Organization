@@ -1,0 +1,1141 @@
+{
+    "nodes": [
+        [
+            "0",
+            {
+                "name": "MessageWorker",
+                "attribute": {
+                    "value": "Hello! I'm here to assist you with the Agent First Organization framework. Whether you need help understanding the components, setting up the framework, customizing workers, or learning best practices for building task-oriented dialogue agents, I'm here to guide you. How can I assist you today?",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 1,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Could you please specify which component or aspect of the Agent First Organization framework you are interested in?",
+                    "task": "Determine the specific component or aspect of the Agent First Organization framework the user is interested in.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "2",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Use the RAGWorker to retrieve detailed information about the requested component from internal documentation.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "3",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here is the detailed information you requested. Was this helpful, or do you need more details?",
+                    "task": "Provide the retrieved information to the user and ask if it was helpful or if they need additional details.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "4",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Would you like information on other components or aspects of the framework?",
+                    "task": "If needed, offer information on other components or aspects of the framework.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "5",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "If you need further assistance, I can suggest additional resources or support options. Would you like to know more?",
+                    "task": "Suggest additional resources or support options if the user requires further assistance.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "6",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Hello! What specific aspect of the Agent First Organization framework do you need help with today? Is it setup, components, or troubleshooting?",
+                    "task": "Initiate the conversation by asking the user what specific aspect of the Agent First Organization framework they need help with, such as setup, components, or troubleshooting.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "7",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Use RAGWorker to gather information from the company's internal documentation about the specific aspect the user has inquired about.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "8",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Based on the information provided, here is a brief overview of the setup process for the Agent First Organization framework...",
+                    "task": "Provide a brief overview or step-by-step instructions related to the user's query using MessageWorker.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "9",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you need any further clarification on this, or is there another aspect of the framework you need assistance with?",
+                    "task": "Ask the user if they need further clarification or if there's another aspect of the framework they need assistance with.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "10",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Let me provide you with more detailed information on that...",
+                    "task": "If the user has additional questions, use RagMsgWorker to combine RAG and Message capabilities to provide comprehensive answers and guidance.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "11",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "I hope you found the information helpful. Please feel free to reach out if you have any more questions in the future!",
+                    "task": "Conclude the interaction by confirming the user has all the needed information and offer assistance for any future queries.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "12",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Could you please describe the specific issue you are experiencing with the Agent First Organization framework?",
+                    "task": "Inquire about the specific issue the user is experiencing with the Agent First Organization framework.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "13",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Use the RAGWorker to access internal documentation and retrieve potential solutions or guidance related to the user's issue.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "14",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Based on the information I found, here are some potential solutions for your issue. Does this help resolve the problem?",
+                    "task": "Provide the user with the retrieved solutions or guidance and ask if this resolves their issue.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "15",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "If this hasn't resolved your issue, would you like additional assistance or should I escalate this to a higher support level?",
+                    "task": "If the issue is not resolved, offer additional assistance or suggest escalating the issue to a higher support level.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "16",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Can you confirm if the issue is resolved? If not, I can provide further steps or assistance.",
+                    "task": "Confirm that the issue is resolved or provide the user with further steps if necessary.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "17",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Could you please share your current understanding of the framework and any specific customization you're interested in?",
+                    "task": "Inquire about the user's current understanding of the framework and what specific customization they are interested in.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "18",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Use RAGWorker to retrieve relevant information from internal documentation on the specific customization topic mentioned by the user.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "19",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Based on our documentation, here are some best practices for customizing workers: [insert detailed advice].",
+                    "task": "Provide the user with detailed advice and best practices on customizing workers, based on the retrieved information.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "20",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you need further clarification or additional information on any aspect of worker customization?",
+                    "task": "Ask the user if they need further clarification or additional information on any aspect of worker customization.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "21",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "If you need more in-depth information or examples, here are some additional resources and documentation links: [insert links].",
+                    "task": "Offer additional resources or documentation links if the user requests more in-depth information or examples.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "22",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Hello! Could you please tell me about your current knowledge level and any specific interests or needs you have regarding the Agent First Organization framework?",
+                    "task": "Initiate the conversation by asking the user about their current knowledge level and specific interests or needs related to the Agent First Organization framework.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "23",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Based on what you've shared, here are some best practices and relevant information about the Agent First Organization framework.",
+                    "task": "Based on the user's response, use the RagMsgWorker to retrieve and share best practices and relevant information from the company's internal documentation.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "24",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you have any specific questions or need clarification on any part of the framework?",
+                    "task": "Ask the user if they have any specific questions or need clarification on any aspect of the framework.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "25",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here's the detailed information from our documentation regarding your question on the framework.",
+                    "task": "Provide detailed responses to the user's questions using the RAGWorker, ensuring that the information is accurate and derived from the company's documentation.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "26",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you need further assistance with implementing, customizing, or troubleshooting the framework?",
+                    "task": "Inquire if the user requires further assistance with implementation, customization, or troubleshooting of the framework.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "27",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "If you need more help, I can provide tutorials, support contacts, or step-by-step instructions. Just let me know!",
+                    "task": "Offer additional resources or guidance, such as tutorials, support contacts, or step-by-step instructions, if the user needs more help.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "28",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Are there any specific features you're interested in learning more about, or would you prefer a general overview?",
+                    "task": "Inquire if the user has specific features they want to learn about (e.g., mixed control, task composition, human intervention, continual learning) or if they would like a general overview.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "29",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Based on our documentation, here is a detailed explanation of the feature(s) you selected.",
+                    "task": "Use RAGWorker to provide a detailed explanation of the selected feature(s) or a general overview, accessing the company's internal documentation to ensure accurate information.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "30",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you have any specific questions or need further clarification on the features I described?",
+                    "task": "Ask the user if they have any specific questions or need further clarification on any of the explained features.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "31",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here is the detailed answer to your question, based on our internal documentation.",
+                    "task": "Provide detailed answers to the user's questions using RAGWorker, referencing internal documentation for precise and comprehensive responses.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "32",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Would you like guidance on implementing or troubleshooting any of the features we've discussed?",
+                    "task": "Inquire if the user needs guidance on implementing or troubleshooting any of the features discussed.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "33",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are some additional resources and steps to help you with implementation or troubleshooting.",
+                    "task": "Offer additional resources or steps for implementation or troubleshooting, ensuring the user has the support needed to proceed effectively.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "34",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you have any specific questions or existing knowledge about TaskGraph that you would like to share with me?",
+                    "task": "Inquire if the user has any specific questions or existing knowledge about TaskGraph to tailor the response.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "35",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "TaskGraph plays a crucial role in orchestration within the framework by [insert detailed description from documentation].",
+                    "task": "Use RAGWorker to retrieve and deliver the description of TaskGraph's role in orchestration within the framework from the internal documentation.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "36",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you need further clarification or have additional questions about TaskGraph?",
+                    "task": "Ask the user if they need further clarification or have additional questions regarding TaskGraph.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "37",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Based on your question, here is more detailed information about TaskGraph: [insert detailed explanation from documentation].",
+                    "task": "If the user has more questions, use RAGWorker to provide detailed answers or explanations based on the internal documentation.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "38",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Are you satisfied with the information provided, or do you need help with another aspect of the framework?",
+                    "task": "Confirm if the user is satisfied with the information provided or needs assistance with another aspect of the framework.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "39",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are the evaluation tools available within our framework: [Tool A], [Tool B], and [Tool C]. Each tool provides unique features for assessing different aspects of the system.",
+                    "task": "Provide information on the evaluation tools available within the framework",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ]
+    ],
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "User wants to understand framework components",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "1",
+            "2",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "2",
+            "3",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "3",
+            "4",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "4",
+            "5",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "6",
+            {
+                "intent": "User wants to implement the framework",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "6",
+            "7",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "7",
+            "8",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "8",
+            "9",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "9",
+            "10",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "10",
+            "11",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "12",
+            {
+                "intent": "User needs troubleshooting help",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "12",
+            "13",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "13",
+            "14",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "14",
+            "15",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "15",
+            "16",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "17",
+            {
+                "intent": "User seeks guidance on worker customization",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "17",
+            "18",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "18",
+            "19",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "19",
+            "20",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "20",
+            "21",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "22",
+            {
+                "intent": "User wants to learn about best practices",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "22",
+            "23",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "23",
+            "24",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "24",
+            "25",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "25",
+            "26",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "26",
+            "27",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "28",
+            {
+                "intent": "User asks about framework features",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "28",
+            "29",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "29",
+            "30",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "30",
+            "31",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "31",
+            "32",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "32",
+            "33",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "34",
+            {
+                "intent": "User wants to know about TaskGraph orchestration",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "34",
+            "35",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "35",
+            "36",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "36",
+            "37",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "37",
+            "38",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "39",
+            {
+                "intent": "User wants to explore evaluation tools",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "role": "Agent First Organization framework assistant",
+    "user_objective": "The assistant helps users understand, implement, and troubleshoot the Agent First Organization framework. It provides guidance on framework components, setup procedures, worker customization, and best practices for building task-oriented dialogue agents.",
+    "builder_objective": "The assistant helps gather specific information about the user's project requirements and technical expertise to provide more targeted guidance on implementing the framework.",
+    "domain": "AI development frameworks",
+    "intro": "The Agent First Organization framework enables developers to create task-oriented dialogue agents powered by LLMs. It offers a modular and extensible architecture with features like mixed control, task composition, human intervention, and continual learning. The framework supports various components including TaskGraph for orchestration, different types of Workers for specific functionalities, and comprehensive evaluation tools.",
+    "task_docs": [
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/intro",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/tutorials/customer-service",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/tutorials/booking-service",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Config",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Taskgraph/intro",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Taskgraph/Generation",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/MessageState",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/MessageWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/RAGWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/DatabaseWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/SearchWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/DefaultWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Evaluation/intro",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Evaluation/UserSimulator",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Evaluation/Metrics",
+            "num": 1
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/intro",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/tutorials/customer-service",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/tutorials/booking-service",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Config",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Taskgraph/intro",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Taskgraph/Generation",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/MessageState",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/MessageWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/RAGWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/DatabaseWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/SearchWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/DefaultWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Evaluation/intro",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Evaluation/UserSimulator",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Evaluation/Metrics",
+            "num": 1
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        "RAGWorker",
+        "RagMsgWorker",
+        "MessageWorker",
+        "SearchWorker",
+        "DefaultWorker"
+    ],
+    "nluapi": "http://localhost:55135/nlu/predict",
+    "slotfillapi": "http://localhost:55135/slotfill/predict"
+}

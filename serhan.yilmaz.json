@@ -1,0 +1,147 @@
+{
+    "role": "Agent First Organization framework assistant",
+    "user_objective": "The assistant helps users understand, implement, and troubleshoot the Agent First Organization framework. It provides guidance on framework components, setup procedures, worker customization, and best practices for building task-oriented dialogue agents.",
+    "builder_objective": "The assistant helps gather specific information about the user's project requirements and technical expertise to provide more targeted guidance on implementing the framework.",
+    "domain": "AI development frameworks",
+    "intro": "The Agent First Organization framework enables developers to create task-oriented dialogue agents powered by LLMs. It offers a modular and extensible architecture with features like mixed control, task composition, human intervention, and continual learning. The framework supports various components including TaskGraph for orchestration, different types of Workers for specific functionalities, and comprehensive evaluation tools.",
+    "task_docs": [
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/intro",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/tutorials/customer-service",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/tutorials/booking-service",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Config",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Taskgraph/intro",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Taskgraph/Generation",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/MessageState",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/MessageWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/RAGWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/DatabaseWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/SearchWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/DefaultWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Evaluation/intro",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Evaluation/UserSimulator",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Evaluation/Metrics",
+            "num": 1
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/intro",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/tutorials/customer-service",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/tutorials/booking-service",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Config",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Taskgraph/intro",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Taskgraph/Generation",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/MessageState",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/MessageWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/RAGWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/DatabaseWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/SearchWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Workers/DefaultWorker",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Evaluation/intro",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Evaluation/UserSimulator",
+            "num": 1
+        },
+        {
+            "source": "https://articulateai.github.io/Agent-First-Organization/docs/Evaluation/Metrics",
+            "num": 1
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        "RAGWorker",
+        "RagMsgWorker",
+        "MessageWorker",
+        "SearchWorker",
+        "DefaultWorker"
+    ]
+}

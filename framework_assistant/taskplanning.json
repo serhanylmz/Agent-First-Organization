@@ -1,0 +1,81 @@
+[
+    {
+        "task_name": "Provide guidance on the components of the Agent First Organization framework",
+        "steps": [
+            "Determine the specific component or aspect of the Agent First Organization framework the user is interested in.",
+            "Use the RAGWorker to retrieve detailed information about the requested component from internal documentation.",
+            "Provide the retrieved information to the user and ask if it was helpful or if they need additional details.",
+            "If needed, offer information on other components or aspects of the framework.",
+            "Suggest additional resources or support options if the user requires further assistance."
+        ]
+    },
+    {
+        "task_name": "Provide step-by-step instructions for setting up the Agent First Organization framework",
+        "steps": [
+            "Initiate the conversation by asking the user what specific aspect of the Agent First Organization framework they need help with, such as setup, components, or troubleshooting.",
+            "Use RAGWorker to gather information from the company's internal documentation about the specific aspect the user has inquired about.",
+            "Provide a brief overview or step-by-step instructions related to the user's query using MessageWorker.",
+            "Ask the user if they need further clarification or if there's another aspect of the framework they need assistance with.",
+            "If the user has additional questions, use RagMsgWorker to combine RAG and Message capabilities to provide comprehensive answers and guidance.",
+            "Conclude the interaction by confirming the user has all the needed information and offer assistance for any future queries."
+        ]
+    },
+    {
+        "task_name": "Assist in troubleshooting issues related to the Agent First Organization framework",
+        "steps": [
+            "Inquire about the specific issue the user is experiencing with the Agent First Organization framework.",
+            "Use the RAGWorker to access internal documentation and retrieve potential solutions or guidance related to the user's issue.",
+            "Provide the user with the retrieved solutions or guidance and ask if this resolves their issue.",
+            "If the issue is not resolved, offer additional assistance or suggest escalating the issue to a higher support level.",
+            "Confirm that the issue is resolved or provide the user with further steps if necessary."
+        ]
+    },
+    {
+        "task_name": "Offer advice and best practices on customizing workers within the framework",
+        "steps": [
+            "Inquire about the user's current understanding of the framework and what specific customization they are interested in.",
+            "Use RAGWorker to retrieve relevant information from internal documentation on the specific customization topic mentioned by the user.",
+            "Provide the user with detailed advice and best practices on customizing workers, based on the retrieved information.",
+            "Ask the user if they need further clarification or additional information on any aspect of worker customization.",
+            "Offer additional resources or documentation links if the user requests more in-depth information or examples."
+        ]
+    },
+    {
+        "task_name": "Share best practices for building task-oriented dialogue agents using the framework",
+        "steps": [
+            "Initiate the conversation by asking the user about their current knowledge level and specific interests or needs related to the Agent First Organization framework.",
+            "Based on the user's response, use the RagMsgWorker to retrieve and share best practices and relevant information from the company's internal documentation.",
+            "Ask the user if they have any specific questions or need clarification on any aspect of the framework.",
+            "Provide detailed responses to the user's questions using the RAGWorker, ensuring that the information is accurate and derived from the company's documentation.",
+            "Inquire if the user requires further assistance with implementation, customization, or troubleshooting of the framework.",
+            "Offer additional resources or guidance, such as tutorials, support contacts, or step-by-step instructions, if the user needs more help."
+        ]
+    },
+    {
+        "task_name": "Explain the features of the framework such as mixed control, task composition, human intervention, and continual learning",
+        "steps": [
+            "Inquire if the user has specific features they want to learn about (e.g., mixed control, task composition, human intervention, continual learning) or if they would like a general overview.",
+            "Use RAGWorker to provide a detailed explanation of the selected feature(s) or a general overview, accessing the company's internal documentation to ensure accurate information.",
+            "Ask the user if they have any specific questions or need further clarification on any of the explained features.",
+            "Provide detailed answers to the user's questions using RAGWorker, referencing internal documentation for precise and comprehensive responses.",
+            "Inquire if the user needs guidance on implementing or troubleshooting any of the features discussed.",
+            "Offer additional resources or steps for implementation or troubleshooting, ensuring the user has the support needed to proceed effectively."
+        ]
+    },
+    {
+        "task_name": "Describe how TaskGraph is used for orchestration within the framework",
+        "steps": [
+            "Inquire if the user has any specific questions or existing knowledge about TaskGraph to tailor the response.",
+            "Use RAGWorker to retrieve and deliver the description of TaskGraph's role in orchestration within the framework from the internal documentation.",
+            "Ask the user if they need further clarification or have additional questions regarding TaskGraph.",
+            "If the user has more questions, use RAGWorker to provide detailed answers or explanations based on the internal documentation.",
+            "Confirm if the user is satisfied with the information provided or needs assistance with another aspect of the framework."
+        ]
+    },
+    {
+        "task_name": "Provide information on the evaluation tools available within the framework",
+        "steps": [
+            "Provide information on the evaluation tools available within the framework"
+        ]
+    }
+]
