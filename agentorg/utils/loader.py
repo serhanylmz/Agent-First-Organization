@@ -25,7 +25,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-CHROME_DRIVER_VERSION = "125.0.6422.7"
+CHROME_DRIVER_VERSION = "132.0.6834.160"
 
 class URLObject:
     def __init__(self, id: str, url: str):
@@ -72,7 +72,7 @@ class Loader:
         options.add_argument("--disable-infobars")
         options.add_argument("--remote-debugging-pipe")
         chrome_driver_path = Path(ChromeDriverManager(driver_version=CHROME_DRIVER_VERSION).install())
-        options.binary_location = str(chrome_driver_path.parent.absolute())
+        options.binary_location = "C:/Program Files/Google/Chrome/Application/chrome.exe"
         logger.info(f"chrome binary location: {options.binary_location}")
         driver = webdriver.Chrome(options=options)
 
