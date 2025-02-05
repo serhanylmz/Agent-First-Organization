@@ -1,0 +1,207 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "how is user goal completion efficiency calculated?",
+            "intent": "user wants to understand core framework concepts"
+        },
+        {
+            "role": "assistant",
+            "content": "User goal completion efficiency is calculated by determining the average number of turns taken by the chatbot to successfully complete the user's goal in a conversation. The aim is to have a lower number of turns, which indicates greater efficiency in achieving the user's objective. If the number of turns required is high, it suggests that the chatbot might not be effectively handling the interaction. It's important to set the maximum number of turns to a reasonable value, typically between 5 to 10, to ensure accurate measurement of this metric"
+        },
+        {
+            "role": "user",
+            "content": "oh i see, so what factors can affect this efficiency?",
+            "intent": "user wants to understand core framework concepts"
+        },
+        {
+            "role": "assistant",
+            "content": "Several factors can affect user goal completion efficiency:  1. **Complexity of the User's Goal**: More complex goals may naturally require more dialogue turns to complete, which can impact efficiency.  2. **Chatbot's Understanding and Response Quality**: If the chatbot has difficulty understanding user inputs or provides unclear responses, it may take more turns to achieve the goal.  3. **Natural Language Understanding (NLU) Performance**: The accuracy of intent recognition and entity extraction plays a crucial role. Misunderstandings can lead to additional turns for clarifications.  4. **Configuration of the Chatbot**: This includes settings like the maximum number of turns allowed. If set too low, it may artificially inflate the efficiency metric if the goal isn't completed within the limit.  5. **User Simulator's Design**: The way user interactions are simulated can influence the number of turns, especially if the simulator doesn't accurately reflect real user behavior.  6. **Dialogue Management Strategies**: The strategies used by the chatbot to manage conversations, such as handling interruptions or confirmations, can also impact efficiency.  By optimizing these factors, you can improve the chatbot's efficiency in completing user goals"
+        },
+        {
+            "role": "user",
+            "content": "thanks for the detailed info! is there a way to test or improve these factors?",
+            "intent": "user wants to understand core framework concepts"
+        },
+        {
+            "role": "assistant",
+            "content": "Yes, there are several ways to test and improve these factors:  1. **User Simulator Testing**: Use a user simulator to evaluate how the chatbot handles various interactions. This can help identify areas where the chatbot struggles to understand user intents or complete goals efficiently.  2. **A/B Testing**: Implement A/B testing with different versions of your chatbot to see which configurations or dialogue strategies result in better efficiency. Analyze the results to determine which changes positively impact goal completion efficiency.  3. **User Feedback**: Gather feedback from real users to gain insights into the chatbot\u2019s performance. Users can provide valuable information on where the chatbot may be falling short in terms of understanding or efficiency.  4. **NLU Model Improvement**: Continuously refine the NLU models by training them with diverse and representative data. This helps improve intent recognition and entity extraction, leading to more efficient interactions.  5. **Dialogue Flow Optimization**: Review and optimize the dialogue flows to minimize unnecessary turns. Make sure the conversation path is as direct as possible while still being natural and engaging.  6. **Configuration Adjustments**: Adjust settings like the maximum number of turns to ensure they are appropriate for the complexity of the tasks the chatbot is handling.   7. **Regular Monitoring and Analysis**: Regularly monitor performance metrics and analyze conversations to identify patterns or recurring issues that may be affecting efficiency. Use this data to make iterative improvements.  By implementing these strategies, you can enhance the chatbot's ability to complete user goals efficiently and effectively. Here's a detailed explanation of the concept you asked about"
+        },
+        {
+            "role": "user",
+            "content": "that sounds really helpful! i'll definitely look into these strategies. thanks for the guidance!",
+            "intent": "user wants to understand core framework concepts"
+        },
+        {
+            "role": "assistant",
+            "content": "You're welcome! I'm glad you found the guidance helpful. Do you need further clarification or have additional questions about this concept? Feel free to ask if there's anything else you'd like to know"
+        },
+        {
+            "goal_completetion": true
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "hi, how do i set up a booking service bot using the agent first framework?",
+            "intent": "user wants to create and configure custom agents"
+        },
+        {
+            "role": "assistant",
+            "content": "Setting up a booking service bot using the Agent First Organization framework involves several steps. Here's a general guide to get you started:  1. **Understand the Framework**: Familiarize yourself with the core concepts of the Agent First Organization framework. This framework is designed to create task-oriented dialogue agents that can handle specific tasks, such as booking services.  2. **Access the Tutorial**: Visit the [Booking Service Bot tutorial](https://articulateai.github.io/Agent-First-Organization/docs/tutorials/booking-service) to get detailed instructions. This tutorial will guide you through building a bot that handles customer inquiries related to bookings.  3. **Set Up Your Environment**: Ensure you have the necessary development environment set up. This typically includes Python, any required libraries, and access to a database if your bot needs to interact with one.  4. **Create the TaskGraph**: The TaskGraph defines the tasks your bot will handle. For a booking service bot, this might include tasks like finding show availabilities, booking shows, and modifying bookings.  5. **Run the Bot**: Use the command `python run.py --input-dir ./examples/booking_system` to initialize and start the bot. This will launch the necessary services, such as natural language understanding (NLU) APIs, to interact with the bot.  6. **Test the Bot**: Interact with the bot to ensure it performs the desired actions. You can have sample conversations to verify its responses and capabilities.  7. **Evaluate Performance**: Use the evaluation script to generate synthetic conversations and assess the bot's task completion metrics.  If you encounter any specific issues or need further assistance with certain steps, feel free to ask"
+        },
+        {
+            "role": "user",
+            "content": "thanks! how do i integrate it with a database?",
+            "intent": "user wants to create and configure custom agents"
+        },
+        {
+            "role": "assistant",
+            "content": "Integrating your booking service bot with a database using the Agent First Organization framework involves a few key steps. Here's a breakdown to guide you through the process:  1. **Set Up Your Database**: Ensure that you have a database set up with the necessary tables and data. This might include tables for events, bookings, users, etc. The tutorial uses a fake database for demonstration purposes, but you can replace it with your actual database.  2. **Create DatabaseWorkers**: In the Agent First Organization framework, you'll use DatabaseWorkers to connect your bot to the database. These workers handle the interaction between the bot and the database, performing tasks like retrieving or updating records.  3. **Define Database Queries**: You'll need to define the SQL queries or use an ORM (Object-Relational Mapping) to interact with your database. These queries will be executed by the DatabaseWorkers to fetch the required information or update the database.  4. **Configure the TaskGraph**: Within your TaskGraph, you'll configure tasks that require database interaction to use the DatabaseWorkers. This involves specifying which queries to run for each task and how to handle the results.  5. **Test the Integration**: After setting up the DatabaseWorkers and configuring your TaskGraph, test the integration by interacting with your bot. Ensure that the bot can successfully retrieve and update data as expected.  6. **Handle Edge Cases**: Consider any potential edge cases or errors that might occur during database operations and handle them gracefully in your bot logic.  If you need more detailed guidance on any of these steps, feel free to ask"
+        },
+        {
+            "role": "user",
+            "content": "cool, and how do i create the taskgraph for managing conversations?",
+            "intent": "user wants to create and configure custom agents"
+        },
+        {
+            "role": "assistant",
+            "content": "Creating a TaskGraph for managing conversations in the Agent First Organization framework involves several key steps. Here's a general guide to help you through the process:  1. **Understand the TaskGraph Concept**: The TaskGraph is a structure that defines the flow of conversations by linking various tasks together. Each node in the TaskGraph represents a specific task that the bot needs to perform.  2. **Create a Config File**: Start by creating a configuration JSON file that describes your bot and the tasks it will handle. This file will include information such as task names, worker types, and any necessary parameters.  3. **Generate the TaskGraph**: Use the framework's generator tool to convert your config file into a TaskGraph. You can do this by running a command like:    ```bash    python create.py --config ./examples/booking_assistant_config.json --output-dir ./examples/booking_system    ```    This will open a task planning panel where you can review and modify the tasks and steps as needed.  4. **Define Tasks and Workers**: In the task planning panel, define the tasks your bot will perform and assign appropriate workers to each task. Workers are responsible for executing the tasks and interacting with users or external systems.  5. **Link Tasks Together**: Specify how tasks are connected in the TaskGraph. This involves defining the flow and conditions under which the bot transitions from one task to another based on user input or task completion.  6. **Save the TaskGraph**: Once you're satisfied with the task structure, save the TaskGraph file. This file will guide the bot's conversation flow during runtime.  7. **Test the TaskGraph**: Run your bot and test the conversation flow to ensure that tasks are executed correctly and in the right order. Make adjustments as needed to optimize the conversation experience.  If you need more detailed instructions or have specific questions about any of these steps, feel free to ask"
+        },
+        {
+            "role": "user",
+            "content": "thanks, that helps a lot! if i have more questions later, can i reach out again?",
+            "intent": ""
+        },
+        {
+            "role": "assistant",
+            "content": "You're welcome! I'm glad I could help. Feel free to reach out anytime you have more questions or need further assistance. I'm here to support you with the Agent First Organization framework. Happy coding"
+        },
+        {
+            "goal_completetion": true
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "how does the RAGWorker use FAISS for info retrieval?",
+            "intent": "user wants to understand core framework concepts"
+        },
+        {
+            "role": "assistant",
+            "content": "The RAGWorker uses FAISS (Facebook AI Similarity Search) as part of its retrieval process to efficiently locate relevant information from a set of documents. Here's how it works:  1. **Retriever Node**: Within the RAGWorker's pipeline, the retriever node is responsible for fetching relevant information. It does this by using the RetrieveEngine.retrieve method.  2. **FAISS Application**: The retriever node applies FAISS to the RAG documents specified in the configuration. FAISS is a library optimized for similarity search and clustering, which allows for fast retrieval of relevant document chunks based on the input query.  3. **Document Loading**: The relevant chunks of documents are loaded from the directory path set in the `DATA_DIR` environment variable. This setup ensures that only pertinent information is retrieved, which is then used to generate a response.  By leveraging FAISS in the retriever node, the RAGWorker can efficiently handle large volumes of unstructured text data, retrieving the necessary pieces of information to construct accurate and contextually relevant responses"
+        },
+        {
+            "role": "user",
+            "content": "thanks for the info! can you explain how the RAGWorker generates responses after retrieving the info?",
+            "intent": "user wants to understand core framework concepts"
+        },
+        {
+            "role": "assistant",
+            "content": "After the RAGWorker retrieves the relevant information using FAISS, it moves to the next step in its pipeline: response generation. Here's how the RAGWorker generates responses:  1. **Tool Generator Node**: This is the component responsible for creating the response. The information retrieved by the retriever node is forwarded to the tool generator node.  2. **Contextual Generation**: The tool generator node uses the `ToolGenerator.context_generate` method to produce a response. This method takes into account the context included in the retrieved information to craft a coherent and relevant answer to the user's question.  3. **Prompt Details**: The method constructs a prompt that integrates the retrieved context. Unlike a standard text generator, this approach ensures that the generated response is directly informed by the specific pieces of information retrieved, making it both accurate and contextually appropriate.  By incorporating the retrieved context into the response generation process, the RAGWorker ensures that the final output is well-informed and tailored to the user's query, enhancing the effectiveness of the dialogue agent"
+        },
+        {
+            "role": "user",
+            "content": "got it, thanks! so the tool generator node uses the context from the retrieved info to make the response more accurate, right?",
+            "intent": "others"
+        },
+        {
+            "role": "assistant",
+            "content": "Exactly! The tool generator node uses the context from the retrieved information to ensure that the response is not only relevant but also accurate and tailored to the user's specific query. By integrating this context into the response generation process, the RAGWorker can produce answers that are better informed and more aligned with what the user is looking for. This approach enhances the overall quality and precision of the dialogue agent's output"
+        },
+        {
+            "role": "user",
+            "content": "makes sense! is there a way to see an example of how this works in practice?",
+            "intent": "user seeks practical examples of framework usage"
+        },
+        {
+            "role": "assistant",
+            "content": "To see an example of how the RAGWorker operates in practice, you can check out the documentation or tutorials provided by the Agent First Organization framework. These resources typically include step-by-step guides and examples that demonstrate the setup and functioning of RAGWorker, including the retrieval and response generation processes. You can visit the official documentation [here](https://articulateai.github.io/Agent-First-Organization/docs/Workers/RAGWorker) for more detailed information and practical examples"
+        },
+        {
+            "goal_completetion": true
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "hi, how do i set up a booking service bot using your framework?",
+            "intent": "user wants to create and configure custom agents"
+        },
+        {
+            "role": "assistant",
+            "content": "Hi! Setting up a booking service bot using the Agent First Organization framework is a great way to get started with task-oriented dialogue agents. Here's a step-by-step guide to help you through the process:  1. **Introduction to the Framework**:    - First, familiarize yourself with the Agent First Organization framework. It's designed to help you develop dialogue agents powered by large language models (LLMs).  2. **Prepare Your Environment**:    - Make sure you have Python installed on your system. You'll also need to clone or download the framework's codebase from its repository.  3. **Set Up the Booking Service Bot**:    - Navigate to the booking service tutorial provided in the framework documentation. You can find it [here](https://articulateai.github.io/Agent-First-Organization/docs/tutorials/booking-service#intro).    - This tutorial will guide you through building a bot that can handle common customer inquiries like finding show availabilities, booking shows, retrieving performance schedules, and modifying or canceling existing bookings.  4. **Connect to a Database**:    - The bot can interact with databases through DatabaseWorkers. Replace the fake database content used in the tutorial with your own database content if necessary.  5. **Running the Bot**:    - With the setup complete, you can run the bot using the following command:      ```bash      python run.py --input-dir ./examples/booking_system      ```    - This will initialize the necessary services and allow you to start interacting with the bot.  6. **Evaluation**:    - After setting up the bot, you can evaluate its performance using the evaluation script, which generates synthetic conversations to extract task completion metrics.  If you have any specific questions or encounter any issues during the setup, feel free to ask"
+        },
+        {
+            "role": "user",
+            "content": "thanks! how do i integrate it with a database?",
+            "intent": "user wants to create and configure custom agents"
+        },
+        {
+            "role": "assistant",
+            "content": "Integrating your booking service bot with a database is an important step to ensure it can handle tasks like retrieving and storing booking information. Here's how you can do it using the Agent First Organization framework:  1. **Understand DatabaseWorkers**:    - The framework includes a component called DatabaseWorkers, which allows your bot to connect to and interact with databases. These workers can perform tasks like querying data, updating records, and more.  2. **Set Up Your Database**:    - Ensure you have a database set up with the necessary tables and data structure to store booking information. You can use databases like MySQL, PostgreSQL, or any other supported by your environment.  3. **Configure Database Connection**:    - Within the framework, you will need to configure the connection settings for your database. This typically involves specifying the database type, host, port, username, password, and database name in a configuration file.  4. **Implement DatabaseWorkers**:    - Create DatabaseWorkers in your bot's TaskGraph. These workers will handle specific tasks related to database operations such as retrieving show availabilities or updating booking records.  5. **Modify the Config File**:    - Update your bot's configuration file to include details about the DatabaseWorkers. Ensure that the tasks they perform are aligned with the bot's dialogue flow and user requirements.  6. **Test the Integration**:    - Run your bot and test the database integration by performing tasks that require database interaction. Check if the bot can retrieve and store information correctly.  7. **Debugging and Optimization**:    - If you encounter any issues, check the logs for error messages and verify the database queries. Optimize the queries and database structure as needed for better performance.  If you have specific questions about any of these steps or encounter challenges, feel free to ask for more detailed guidance"
+        },
+        {
+            "role": "user",
+            "content": "cool, and how do i generate a TaskGraph for managing conversations?",
+            "intent": "user wants to create and configure custom agents"
+        },
+        {
+            "role": "assistant",
+            "content": "Generating a TaskGraph is an essential step to manage conversations effectively with your bot. Here's how you can generate a TaskGraph using the Agent First Organization framework:  1. **Prepare the Config File**:    - Start by setting up a configuration file that describes the tasks your bot will handle. This file usually includes details about the type of tasks, the sequence they must follow, and the workers responsible for each task.  2. **Run the TaskGraph Generator**:    - Once your configuration file is ready, you can generate the TaskGraph using the framework's built-in generator. Navigate to the directory where your config file is located and run the following command:      ```bash      python create.py --config ./examples/booking_assistant_config.json --output-dir ./examples/booking_system      ```    - Replace `./examples/booking_assistant_config.json` with the path to your specific config file and `./examples/booking_system` with your desired output directory.  3. **Interactive Task Planning**:    - The generator will enter an interactive task planning mode where you can view and modify the generated tasks. This allows you to refine the tasks and steps according to your bot's requirements.  4. **Save and Generate the Final TaskGraph**:    - Once you\u2019re satisfied with the task planning, save the configuration by pressing `s`. This will generate the final TaskGraph file in your specified output directory.  5. **Integrate and Test**:    - With the TaskGraph generated, integrate it into your bot's setup and test it to ensure it manages conversations as expected.  Feel free to ask if you need further assistance or have any specific questions about this process"
+        },
+        {
+            "role": "user",
+            "content": "thanks, that helps a lot! if i run into issues, can i come back for more help?",
+            "intent": "user wants to create and configure custom agents"
+        },
+        {
+            "role": "assistant",
+            "content": "You're welcome! I'm glad I could help. If you run into any issues or have more questions, feel free to come back anytime for further assistance. I'm here to help you through the process.  Here are the steps to develop a custom agent, including coding and configuration. I've included examples from our documentation to help you"
+        },
+        {
+            "goal_completetion": true
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "hi, how do i set up a booking service bot using the agent first framework?",
+            "intent": "user wants to create and configure custom agents"
+        },
+        {
+            "role": "assistant",
+            "content": "Setting up a booking service bot using the Agent First Organization framework involves a few key steps. Here's a simplified guide to get you started:  1. **Install the Framework**: First, ensure you have the necessary software installed. This typically involves setting up Python and installing the framework's dependencies.  2. **Create a TaskGraph**: The TaskGraph is essential for defining the flow of tasks your bot will handle. This includes specifying how the bot will manage different booking-related tasks, such as checking availability and processing bookings.  3. **Connect to a Database**: To manage bookings and show availability, you'll likely need to connect your bot to a database. Use DatabaseWorkers to facilitate this connection, allowing your bot to retrieve and update booking information.  4. **Develop the Bot's Logic**: Implement the logic for handling user interactions. This involves defining how the bot will respond to various user queries and manage the booking process.  5. **Run the Bot**: Once everything is set up, you can run your bot using a command like:    ```bash    python run.py --input-dir ./examples/booking_system    ```    This will initialize the necessary services and allow you to start interacting with your bot.  6. **Test and Evaluate**: It's important to test the bot to ensure it functions as expected. You can use evaluation scripts to simulate conversations and measure task completion metrics.  For detailed instructions and examples, you can refer to the [booking service bot tutorial](https://articulateai.github.io/Agent-First-Organization/docs/tutorials/booking-service). This resource will guide you through the setup with specific examples and further details"
+        },
+        {
+            "role": "user",
+            "content": "thanks for the info! can you explain more about creating a TaskGraph? how do i define the flow of tasks for the bot?",
+            "intent": "user wants to create and configure custom agents"
+        },
+        {
+            "role": "assistant",
+            "content": "Creating a TaskGraph is a crucial step in defining how your booking service bot will manage and execute various tasks. Here's an overview of how to create and structure a TaskGraph:  1. **Understand TaskGraph Components**: A TaskGraph is essentially a representation of tasks and their dependencies. It outlines the sequence of operations that your bot will perform to handle user requests effectively.  2. **Define Tasks**: Identify the specific tasks your bot needs to handle. For a booking service bot, tasks might include checking show availability, booking a ticket, modifying a booking, or canceling a booking.  3. **Specify Task Dependencies**: Determine the order in which tasks need to be executed. Some tasks may depend on the completion of others. For instance, booking a ticket might require first checking availability. Define these dependencies clearly in your TaskGraph.  4. **Create a Configuration File**: Use a configuration file (usually in JSON format) to define the TaskGraph. This file will include details about each task, their dependencies, and any parameters required for execution. Here's a simplified example structure:     ```json    {      \"tasks\": [        {          \"name\": \"CheckAvailability\",          \"dependencies\": [],          \"parameters\": {            \"show_id\": \"required\"          }        },        {          \"name\": \"BookTicket\",          \"dependencies\": [\"CheckAvailability\"],          \"parameters\": {            \"user_id\": \"required\",            \"show_id\": \"required\",            \"seats\": \"required\"          }        }      ]    }    ```  5. **Generate the TaskGraph**: Once your configuration file is ready, you can generate the TaskGraph using a command like:     ```bash    python create.py --config ./examples/booking_assistant_config.json --output-dir ./examples/booking_system    ```     This command processes your configuration file and creates a TaskGraph that your bot will use to manage tasks.  6. **Test and Iterate**: After generating the TaskGraph, test it to ensure it correctly represents the flow of tasks. Make adjustments as needed based on testing outcomes.  By carefully defining the tasks and their dependencies, your TaskGraph will serve as the blueprint for how your bot handles booking-related inquiries. This structured approach helps ensure efficient and accurate task execution"
+        },
+        {
+            "role": "user",
+            "content": "got it, thanks! how do i connect the bot to a database? do i need to use specific tools or libraries for that?",
+            "intent": "user wants to create and configure custom agents"
+        },
+        {
+            "role": "assistant",
+            "content": "Connecting your bot to a database is a key step in enabling it to manage dynamic data, such as booking information or show availability. Here's how you can set up this connection using the Agent First Organization framework:  1. **Choose a Database**: Decide on the type of database you'll use (e.g., SQL, NoSQL). For this framework, you'll typically use a SQL database, but you can adapt the setup for NoSQL databases as needed.  2. **Set Up DatabaseWorkers**: The framework uses DatabaseWorkers to handle interactions with your database. These workers are responsible for executing database queries and returning results to the bot.  3. **Configure Database Connection**: You'll need to specify the database connection details in your configuration file. This usually includes the database type, host, port, username, password, and the name of the database you want to connect to.  4. **Install Necessary Libraries**: Depending on your database choice, you'll need to install specific Python libraries. Common libraries include:    - `psycopg2` for PostgreSQL,    - `pymysql` for MySQL,    - `sqlite3` for SQLite (built into Python).  5. **Implement Database Queries**: In your TaskGraph or bot logic, define the queries your bot will execute. This could include querying for available shows, inserting new booking records, or updating existing bookings.  6. **Test the Connection**: Before deploying your bot, test the database connection to ensure it's working correctly. You can write test scripts to verify that queries return the expected results and handle errors gracefully.  By following these steps, you'll be able to integrate your bot with a database, enabling it to perform tasks like retrieving and updating booking information. Make sure to secure your database connection, especially if it's accessible over the internet, to protect sensitive data"
+        },
+        {
+            "role": "user",
+            "content": "thanks! and how do i implement the logic for handling user interactions? is there a specific way to define responses in the framework?",
+            "intent": "user wants to create and configure custom agents"
+        },
+        {
+            "role": "assistant",
+            "content": "Implementing the logic for handling user interactions in the Agent First Organization framework involves defining how your bot will respond to various user inputs and manage the booking process. Here\u2019s how you can approach it:  1. **Understand User Intents**: Begin by identifying the different intents or goals users may have when interacting with your bot. For a booking service bot, these might include intents like checking availability, making a booking, or canceling a reservation.  2. **Define Dialogue Flows**: Map out the dialogue flows for each user intent. Determine the sequence of interactions needed to fulfill a user's request. This includes identifying what information the bot needs to gather from the user and what actions it needs to take.  3. **Create Response Templates**: Develop response templates that your bot will use to communicate with users. These templates should be adaptable to different scenarios and should guide the user through the interaction process. For example, if a user wants to book a ticket, the bot might ask for the show name, date, and number of tickets.  4. **Implement Logic in TaskGraph**: Integrate the dialogue flows and response templates into your TaskGraph. This involves defining tasks that correspond to each step in the dialogue flow and specifying the conditions under which certain responses should be triggered.  5. **Use Natural Language Understanding (NLU)**: Implement NLU models to interpret user inputs and map them to the correct intents. This can involve training machine learning models to recognize specific phrases or keywords that indicate a particular intent.  6. **Handle Edge Cases and Errors**: Plan for edge cases and potential errors in user interactions. Ensure your bot can handle unexpected inputs gracefully and provide helpful error messages or fallback responses.  7. **Test and Refine**: Continuously test the interaction logic with real or simulated users to identify areas for improvement. Use test results to refine dialogue flows, response templates, and NLU models.  By defining clear dialogue flows and response templates, and integrating them with your TaskGraph, you can create a booking service bot that effectively handles user interactions and provides a seamless user experience"
+        },
+        {
+            "goal_completetion": true
+        }
+    ]
+]
