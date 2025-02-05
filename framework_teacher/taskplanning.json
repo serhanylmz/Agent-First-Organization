@@ -1,0 +1,54 @@
+[
+    {
+        "task_name": "Provide detailed explanations of core framework concepts",
+        "steps": [
+            "Ask the user to specify which core framework concept they need detailed explanations about.",
+            "Use the RAGWorker to retrieve detailed information about the specified concept from the company's internal documentation.",
+            "Utilize the RagMsgWorker to compile and deliver the retrieved information to the user in an easily understandable format.",
+            "Ask the user if they need further clarification or have additional questions about the concept.",
+            "Provide additional explanations or examples if requested by the user, using the RAGWorker to fetch more information if necessary."
+        ]
+    },
+    {
+        "task_name": "Guide user through environment setup",
+        "steps": [
+            "Inquire about the user's current environment setup and specific requirements or constraints for setting up the Agent First Organization framework.",
+            "Provide an overview of the environment setup process, including any prerequisites and the main steps involved.",
+            "Guide the user through the initial step of the setup process, providing detailed instructions and referencing relevant documentation using the RAGWorker.",
+            "Ask the user if they encountered any issues or need clarification on the initial step and provide troubleshooting assistance if necessary.",
+            "Proceed to the next step of the setup process, ensuring to provide detailed guidance and documentation references, and repeat the process of confirming user understanding and addressing issues.",
+            "Once the environment setup is complete, ask the user if they need further assistance with any other aspect of the Agent First Organization framework."
+        ]
+    },
+    {
+        "task_name": "Provide step-by-step guidance on creating and configuring custom agents",
+        "steps": [
+            "Introduce the concept of custom agents and the Agent First Organization framework. Inquire about the user's current understanding and specific needs regarding custom agents.",
+            "Provide an overview of the initial setup requirements for creating custom agents, referencing the company's internal documentation for detailed instructions.",
+            "Guide the user through the process of configuring the environment for custom agent creation, addressing any questions using the RAGWorker.",
+            "Explain the steps involved in developing a custom agent, including any necessary coding or configuration, supported by examples from the documentation.",
+            "Assist the user in implementing the custom agent, offering troubleshooting tips for common issues encountered during implementation.",
+            "Confirm the successful creation and configuration of the custom agent, and inquire if the user needs further assistance or clarification."
+        ]
+    },
+    {
+        "task_name": "Assist user with troubleshooting common issues",
+        "steps": [
+            "Identify the specific issue the user is experiencing by asking targeted questions.",
+            "Utilize the RAGWorker to search internal documentation for relevant information or solutions related to the identified issue.",
+            "Deliver the retrieved information or solution to the user using the MessageWorker.",
+            "Ask the user if the provided solution resolved their issue or if they need further assistance.",
+            "If the issue persists, use the RagMsgWorker to refine the search or escalate the query by providing additional resources or connecting with human support if necessary."
+        ]
+    },
+    {
+        "task_name": "Provide practical examples of framework usage",
+        "steps": [
+            "Ask the user about the specific area or concept of the Agent First Organization framework they are interested in learning about.",
+            "Utilize the RAGWorker to retrieve relevant practical examples based on the user's input and the company's internal documentation.",
+            "Present the retrieved practical examples to the user, providing clear explanations and context for each example.",
+            "Ask the user if they need further clarification or additional examples on any specific aspect of the framework.",
+            "Offer to guide the user through implementation steps or address any troubleshooting queries they might have, using the RAGWorker to provide accurate information."
+        ]
+    }
+]
